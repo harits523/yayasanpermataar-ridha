@@ -9,37 +9,49 @@ body {
   background-color: #f6fdf9;
   color: #222;
 }
-/* Header dan logo */
+/* Header */
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  background-color: #005A34; /* hijau tua */
-  padding: 15px 40px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  background-color: #054d26; /* hijau tua */
+  padding: 12px 24px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+/* Logo + Tulisan */
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
 }
 
+/* Gambar logo */
 .logo {
-  width: 80px;          /* bisa ubah jadi 100px kalau mau lebih besar */
-  max-width: 120px;     /* batas maksimal biar gak membesar berlebihan */
+  width: 70px;
   height: auto;
-  border-radius: 12px;
+  border-radius: 10px;
   object-fit: contain;
 }
+
+/* Tulisan di samping logo */
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: white;
 }
 
-.logo-text {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #ffffff;
-  letter-spacing: 0.5px;
-  white-space: nowrap;
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+  .logo {
+    width: 55px;
+  }
+
+  .logo-text {
+    font-size: 1.1rem;
+  }
 }
 
 /* Navigasi */
