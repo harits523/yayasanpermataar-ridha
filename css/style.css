@@ -220,3 +220,99 @@ footer {
   font-size: 0.9rem;
   margin-top: 50px;
 }
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 30px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo dan teks sejajar */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Logo */
+.logo {
+  width: 75px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Teks di samping logo */
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo-text .yayasan {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000000; /* hitam */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.logo-text .arridha {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #005A34; /* hijau tua */
+  letter-spacing: 0.5px;
+}
+
+/* Navigasi */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #005A34;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #009E60;
+}
+
+/* ===== RESPONSIF ===== */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .logo-text .yayasan {
+    font-size: 0.9rem;
+  }
+
+  .logo-text .arridha {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+}
