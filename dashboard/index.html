@@ -1,39 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dashboard - Yayasan Permata Ar-Ridha</title>
-  <link rel="stylesheet" href="../css/admin.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Admin</title>
+  <link rel="stylesheet" href="../css/admin.css">
   <script type="module" src="../js/admin.js" defer></script>
 </head>
 <body>
-  <div class="container dashboard">
-    <header>
-      <h1>Dashboard Admin</h1>
-      <div>
-        <button id="logoutBtn">Keluar</button>
-      </div>
-    </header>
+  <header>
+    <h1>Dashboard Admin</h1>
+    <button id="logout-btn">Logout</button>
+  </header>
 
-    <section class="admin-section">
-      <h2>Tambah / Edit Berita</h2>
-      <input id="judulBerita" placeholder="Judul" />
-      <textarea id="isiBerita" placeholder="Isi"></textarea>
-      <input id="gambarBerita" type="file" />
-      <button id="tambahBeritaBtn">Tambah Berita</button>
-      <div id="editNotice" class="muted"></div>
+  <main class="dashboard">
+    <section>
+      <h2>Kelola Berita</h2>
+      <form id="news-form">
+        <input type="text" id="judul" placeholder="Judul Berita" required>
+        <textarea id="isi" placeholder="Isi Berita" required></textarea>
+        <button type="submit">Tambah / Update Berita</button>
+      </form>
+      <div id="news-list"></div>
     </section>
 
-    <section class="admin-section">
-      <h2>Daftar Berita</h2>
-      <div id="listBerita"></div>
-    </section>
-
-    <section class="admin-section">
+    <section>
       <h2>Pesan Masuk</h2>
-      <div id="daftarPesan"></div>
+      <div id="pesan-list"></div>
     </section>
-  </div>
+  </main>
 </body>
 </html>
