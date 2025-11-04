@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard - Yayasan Permata Ar-Ridha</title>
+  <link rel="stylesheet" href="../css/admin.css" />
+  <script type="module" src="../js/admin.js" defer></script>
+</head>
+<body>
+  <div class="container dashboard">
+    <header>
+      <h1>Dashboard Admin</h1>
+      <div>
+        <button id="logoutBtn">Keluar</button>
+      </div>
+    </header>
+
+    <section class="admin-section">
+      <h2>Tambah / Edit Berita</h2>
+      <input id="judulBerita" placeholder="Judul" />
+      <textarea id="isiBerita" placeholder="Isi"></textarea>
+      <input id="gambarBerita" type="file" />
+      <button id="tambahBeritaBtn">Tambah Berita</button>
+      <div id="editNotice" class="muted"></div>
+    </section>
+
+    <section class="admin-section">
+      <h2>Daftar Berita</h2>
+      <div id="listBerita"></div>
+    </section>
+
+    <section class="admin-section">
+      <h2>Pesan Masuk</h2>
+      <div id="daftarPesan"></div>
+    </section>
+  </div>
+</body>
+</html>
