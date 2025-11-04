@@ -26,9 +26,12 @@ body {
 }
 
 .logo {
-  width: 80px; /* perbesar di sini, misal 80px atau 100px */
+  width: 80px;          /* bisa ubah jadi 100px kalau mau lebih besar */
+  max-width: 120px;     /* batas maksimal biar gak membesar berlebihan */
   height: auto;
   border-radius: 12px;
+  object-fit: contain;
+}
 }
 
 .logo-text {
