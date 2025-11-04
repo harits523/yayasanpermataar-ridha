@@ -9,7 +9,54 @@ body {
   background-color: #f6fdf9;
   color: #222;
 }
+/* Header dan logo */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #005A34; /* hijau tua */
+  padding: 15px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 80px; /* perbesar di sini, misal 80px atau 100px */
+  height: auto;
+  border-radius: 12px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+/* Navigasi */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #A8E6CF; /* hijau muda saat hover */
+}
 /* Header */
 header {
   position: fixed;
