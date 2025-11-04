@@ -21,6 +21,7 @@ header {
   align-items: center;
   padding: 10px 40px;
   z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 .logo {
@@ -112,6 +113,13 @@ header {
   width: 300px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.program-card.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .program-card:hover {
@@ -127,6 +135,18 @@ header {
 .program-card p {
   font-size: 0.95rem;
   color: #444;
+}
+
+/* Fade-up Animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Footer */
