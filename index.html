@@ -1,55 +1,43 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<script>
-  // Redirect otomatis untuk menghapus /index.html dari URL
-  if (window.location.pathname.endsWith("/index.html")) {
-    const cleanUrl = window.location.origin + window.location.pathname.replace("index.html", "");
-    window.history.replaceState({}, document.title, cleanUrl);
-  }
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yayasan Permata Ar-Ridha</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <h1>Yayasan Permata Ar-Ridha</h1>
-    <nav>
-      <a href="index.html" class="active">Beranda</a>
-      <a href="berita.html">Berita</a>
-      <a href="donasi.html">Donasi</a>
-      <a href="kontak.html">Kontak</a>
-    </nav>
+    <div class="logo">
+      <img src="https://drive.google.com/uc?export=view&id=1wV1wLrhhhDyjMY58qWI7UXrXrLSEmL9u" alt="Logo Yayasan">
+      <h1>Yayasan Permata Ar-Ridha</h1>
+    </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <h2>Bersama Membangun Generasi Qur’ani dan Berakhlak</h2>
-    <p>Mari dukung program pendidikan, sosial, dan dakwah Yayasan Permata Ar-Ridha.</p>
-    <a href="donasi.html" class="btn">Donasi Sekarang</a>
-  </section>
-
-  <section class="programs">
-    <h2>Program Kami</h2>
-    <div class="program-grid">
-      <div class="program-card">
-        <h3>Pendidikan</h3>
-        <p>Menyelenggarakan kegiatan belajar dan bimbingan Islami untuk anak-anak dan remaja.</p>
-      </div>
-      <div class="program-card">
-        <h3>Sosial</h3>
-        <p>Berbagi untuk yang membutuhkan melalui kegiatan santunan dan bantuan kemanusiaan.</p>
-      </div>
-      <div class="program-card">
-        <h3>Dakwah</h3>
-        <p>Menebarkan nilai-nilai Islam Rahmatan lil ‘Alamin melalui kegiatan dakwah dan kajian.</p>
-      </div>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Program Unggulan Yayasan</h2>
+      <p>Membangun generasi Qurani dengan cinta dan kepedulian.</p>
+      <a href="#program" class="btn">Lihat Program</a>
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 Yayasan Permata Ar-Ridha. Semua hak dilindungi.</p>
-  </footer>
-</body>
-</html>
+  <!-- Program Section -->
+  <section id="program" class="program-section">
+    <h2>Program Yayasan Permata Ar-Ridha</h2>
+    <div class="program-container">
+      <div class="program-card">
+        <h3>Pendidikan</h3>
+        <p>Memberikan pendidikan Islami dan modern bagi anak-anak.</p>
+      </div>
+      <div class="program-card">
+        <h3>Sosial</h3>
+        <p>Menyalurkan bantuan untuk masyarakat yang membutuhkan.</p>
+      </div>
+      <div class="program-card">
+        <h3
