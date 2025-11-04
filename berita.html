@@ -1,33 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Berita - Yayasan Permata Ar-Ridha</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
   <script type="module" src="js/main.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>Berita</h1>
-      <nav>
-        <a href="index.html">Beranda</a>
-        <a href="berita.html">Berita</a>
-        <a href="donasi.html">Donasi</a>
-        <a href="kontak.html">Kontak</a>
-      </nav>
-    </div>
+  <header>
+    <h1>Berita Yayasan</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="berita.html" class="active">Berita</a>
+      <a href="donasi.html">Donasi</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <section>
-      <div id="allBerita">Memuat daftar berita...</div>
+  <main>
+    <section class="news-section">
+      <h2>Berita & Kegiatan Terbaru</h2>
+      <div id="news-list" class="news-grid"></div>
     </section>
   </main>
 
   <footer>
-    <div class="container"><p>© 2025 Yayasan Permata Ar-Ridha</p></div>
+    <p>© 2025 Yayasan Permata Ar-Ridha</p>
   </footer>
 </body>
 </html>
