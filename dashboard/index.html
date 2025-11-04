@@ -8,6 +8,20 @@
   <script type="module" src="../js/admin.js" defer></script>
 </head>
 <body>
+<section class="upload-berita">
+  <h2>Tambah Berita Baru</h2>
+  <form id="formBerita">
+    <label>Judul Berita:</label><br>
+    <input type="text" id="judul" required><br><br>
+
+    <label>Isi Berita:</label><br>
+    <textarea id="isi" rows="5" required></textarea><br><br>
+
+    <button type="submit">Upload Berita</button>
+  </form>
+</section>
+
+<script type="module" src="../js/berita.js"></script>
   <header>
     <h1>Dashboard Admin</h1>
     <button id="logout-btn">Logout</button>
