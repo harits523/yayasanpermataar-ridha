@@ -1,0 +1,188 @@
+/* === Tema Hijau Lembut Islami === */
+:root {
+  --primary: #4CAF50;       /* hijau utama */
+  --primary-dark: #2E7D32;  /* hijau tua */
+  --accent: #A5D6A7;        /* hijau muda lembut */
+  --light: #E8F5E9;         /* latar belakang lembut */
+  --text: #1B5E20;          /* teks utama */
+  --white: #FFFFFF;
+}
+
+/* === Reset dasar === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--light);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* === Header === */
+header {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+nav a:hover, nav a.active {
+  background-color: var(--primary-dark);
+}
+
+/* === Hero Section === */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to bottom right, var(--primary), var(--accent));
+  color: var(--white);
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--white);
+  color: var(--primary-dark);
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--accent);
+}
+
+/* === Program Section === */
+.programs {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.programs h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.program-card {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.program-card h3 {
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+}
+
+/* === Form Kontak === */
+form {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: var(--primary-dark);
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--primary);
+  color: var(--white);
+  margin-top: 50px;
+}
+
+/* === Responsif === */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .program-card {
+    padding: 20px;
+  }
+}
