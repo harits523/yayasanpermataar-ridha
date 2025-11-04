@@ -14,40 +14,115 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #054d26; /* hijau tua */
-  padding: 12px 24px;
-  color: white;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background-color: #ffffff;
+  padding: 15px 30px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-/* Logo + Tulisan */
+/* Logo */
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 15px;
 }
 
-/* Gambar logo */
 .logo {
-  width: 70px;
+  width: 75px;
   height: auto;
-  border-radius: 10px;
   object-fit: contain;
 }
 
-/* Tulisan di samping logo */
+/* Teks logo */
 .logo-text {
-  font-size: 1.4rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo-text .yayasan {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.logo-text .arridha {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #005A34;
+}
+
+/* Navigasi */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #005A34;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #009E60;
+}
+
+/* Tombol kebab */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #005A34;
+  cursor: pointer;
 }
 
 /* Responsif untuk HP */
 @media (max-width: 768px) {
-  .logo {
-    width: 55px;
+  .menu-toggle {
+    display: block;
   }
+
+  .nav {
+    display: none;
+    width: 100%;
+  }
+
+  .nav.active {
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.3s ease;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: right;
+    padding: 10px 20px;
+  }
+
+  .nav-links li {
+    padding: 8px 0;
+  }
+}
+
+/* Animasi muncul */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
   .logo-text {
     font-size: 1.1rem;
