@@ -1,12 +1,4 @@
-// js/firebase-config.js
-// Konfigurasi Firebase Yayasan Permata Ar-Ridha
-
-// Import SDK utama dari Firebase
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-analytics.js";
-
-// Konfigurasi proyek Firebase kamu
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: "AIzaSyC9nauB7Tj71RDjl5nNY6YwdHbh-jrSFtk",
   authDomain: "yayasanpermataarridha-3b036.firebaseapp.com",
   projectId: "yayasanpermataarridha-3b036",
@@ -15,7 +7,3 @@ const firebaseConfig = {
   appId: "1:1087047736289:web:598daad1866c37c63a10a0",
   measurementId: "G-KFSHTDXGPS"
 };
-
-// Inisialisasi Firebase
-export const app = initializeApp(firebaseConfig);
-export const analytics = getAnalytics(app);
