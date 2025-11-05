@@ -1,35 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontak - Yayasan Permata Ar-Ridha</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kontak — Yayasan Permata Ar-Ridha</title>
   <link rel="stylesheet" href="css/style.css">
-  <script type="module" src="js/main.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Hubungi Kami</h1>
-    <nav>
-      <a href="index.html">Beranda</a>
-      <a href="berita.html">Berita</a>
-      <a href="donasi.html">Donasi</a>
-      <a href="kontak.html" class="active">Kontak</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/20251105_050436_0000.png" alt="Logo">
+        <div class="title"><span class="top">Yayasan Permata</span><span class="sub">Ar-Ridha</span></div>
+      </div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="donasi.html">Donasi</a></li>
+          <li><a href="kontak.html" class="active">Kontak</a></li>
+        </ul>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false">☰</button>
+    </div>
   </header>
 
-  <section class="kontak">
-    <h2>Kirim Pesan Anda</h2>
-    <form id="contact-form">
-      <input type="text" id="nama" placeholder="Nama" required>
-      <input type="email" id="email" placeholder="Email" required>
-      <textarea id="pesan" placeholder="Pesan Anda..." required></textarea>
-      <button type="submit" class="btn">Kirim</button>
-    </form>
-  </section>
+  <main class="container">
+    <section style="padding:28px 0">
+      <h1>Hubungi Kami</h1>
+      <p class="muted">Ada pertanyaan atau ingin berdiskusi tentang program? Isi form di bawah — kami akan merespon secepatnya.</p>
+
+      <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:16px">
+        <div>
+          <div class="card">
+            <form id="contact-form">
+              <div class="form-row"><input id="nama" name="nama" placeholder="Nama" required></div>
+              <div class="form-row"><input id="email" name="email" type="email" placeholder="Email" required></div>
+              <div class="form-row"><textarea id="pesan" name="pesan" rows="6" placeholder="Pesan Anda..." required></textarea></div>
+              <div style="display:flex;gap:10px;align-items:center;justify-content:space-between"><button class="btn" type="submit">Kirim Pesan</button><span class="small muted">Biasanya dibalas 1-3 hari kerja</span></div>
+            </form>
+          </div>
+
+          <div style="margin-top:14px" class="card">
+            <h4>Alamat</h4>
+            <p class="small muted">Jl. Contoh No.1 — Kota — Indonesia</p>
+            <h4>Kontak</h4>
+            <p class="small muted">Email: info@yayasan.or.id<br>Telp: +62 81x-xxxx-xxxx</p>
+          </div>
+        </div>
+
+        <aside class="card">
+          <h4>Jam Operasional</h4>
+          <p class="small muted">Senin — Jumat: 08:00 — 16:00<br>Sabtu: 09:00 — 12:00</p>
+
+          <h4 style="margin-top:12px">Ikuti Kami</h4>
+          <p class="small muted">Instagram / Facebook / YouTube (tambah link di sini)</p>
+        </aside>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Yayasan Permata Ar-Ridha</p>
+    <div class="container"><div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><div><strong>Yayasan Permata Ar-Ridha</strong><div class="small muted">Jl. Contoh No.1 — Kota</div></div><div class="small muted">© 2025 Yayasan Permata Ar-Ridha</div></div></div>
   </footer>
+
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
