@@ -1,37 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donasi - Yayasan Permata Ar-Ridha</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Donasi — Yayasan Permata Ar-Ridha</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Donasi</h1>
-    <nav>
-      <a href="index.html">Beranda</a>
-      <a href="berita.html">Berita</a>
-      <a href="donasi.html" class="active">Donasi</a>
-      <a href="kontak.html">Kontak</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/20251105_050436_0000.png" alt="Logo">
+        <div class="title"><span class="top">Yayasan Permata</span><span class="sub">Ar-Ridha</span></div>
+      </div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="donasi.html" class="active">Donasi</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="donasi.html" class="cta-donate">Donasi</a></li>
+        </ul>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false">☰</button>
+    </div>
   </header>
 
-  <section class="donasi">
-    <h2>Bantu Kami Menebar Kebaikan</h2>
-    <p>Setiap sedekah Anda sangat berarti untuk mendukung program pendidikan, sosial, dan dakwah Yayasan Permata Ar-Ridha.</p>
-    <div class="donasi-card">
-      <h3>Rekening Yayasan</h3>
-      <p>Bank Syariah Indonesia (BSI)<br><strong>1234 5678 9012</strong><br>a.n. Yayasan Permata Ar-Ridha</p>
-    </div>
-    <div class="donasi-card">
-      <h3>QRIS</h3>
-      <img src="img/qris.png" alt="QRIS Donasi" class="qris-img">
-    </div>
-  </section>
+  <main class="container">
+    <section style="padding:28px 0">
+      <h1>Donasi — Bantu Teruskan Kebaikan</h1>
+      <p class="muted">Pilih metode donasi yang paling mudah untuk Anda. Setiap bantuan akan kami salurkan ke program-program pendidikan dan sosial.</p>
+
+      <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:16px">
+        <div>
+          <div class="card">
+            <h3>Rekening Resmi</h3>
+            <p class="small muted">Bank Syariah Indonesia (BSI)</p>
+            <div style="display:flex;align-items:center;gap:12px;margin-top:8px">
+              <div><strong id="rek-number">1234 5678 9012</strong><div class="small">a.n. Yayasan Permata Ar-Ridha</div></div>
+              <button class="copy-btn" onclick="copyText(document.getElementById('rek-number').innerText)">Salin</button>
+            </div>
+
+            <hr style="margin:12px 0;border:none;border-top:1px solid #eef5ee">
+            <p class="small">Untuk donasi via transfer, harap upload bukti transfer di bawah agar kami dapat memproses dan mengonfirmasi.</p>
+
+            <form id="donation-form" style="margin-top:10px">
+              <div class="form-row"><input name="nama" placeholder="Nama (pengirim)" required></div>
+              <div class="form-row"><input name="nominal" placeholder="Nominal (contoh: 100000)" required></div>
+              <div class="form-row"><input type="file" name="bukti" id="bukti" accept="image/*,.pdf"></div>
+              <div style="display:flex;gap:10px;align-items:center;justify-content:space-between"><button class="btn" type="submit">Kirim Bukti Donasi</button><span class="small muted">Terima kasih atas dukungan Anda</span></div>
+            </form>
+          </div>
+
+          <div style="margin-top:16px" class="card">
+            <h3>Catatan</h3>
+            <ul>
+              <li class="small muted">Pastikan nama rekening sesuai dan simpan bukti transfer.</li>
+              <li class="small muted">Donasi akan dikelola transparan dan digunakan untuk program yayasan.</li>
+              <li class="small muted">Hubungi kami jika membutuhkan bukti penerimaan resmi.</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="card">
+          <h4>QRIS / Metode Lain</h4>
+          <p class="small muted">Scan QRIS (gambar placeholder) — ganti dengan file `assets/qris.png` Anda.</p>
+          <img src="assets/qris.png" alt="QRIS" style="width:100%;height:auto;border-radius:8px;object-fit:contain;" onerror="this.style.display='none'">
+
+          <h4 style="margin-top:14px">Pertanyaan seputar donasi?</h4>
+          <p class="small muted">Email: <a href="mailto:info@yayasan.or.id">info@yayasan.or.id</a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>Terima kasih atas dukungan dan kepercayaannya 🙏</p>
+    <div class="container"><div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><div><strong>Yayasan Permata Ar-Ridha</strong><div class="small muted">Jl. Contoh No.1 — Kota</div></div><div class="small muted">© 2025 Yayasan Permata Ar-Ridha</div></div></div>
   </footer>
+
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
