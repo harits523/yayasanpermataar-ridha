@@ -1,53 +1,102 @@
-/* Main stylesheet for Yayasan Permata Ar-Ridha — production-ready */
-:root{
-  --green:#006a3a;
-  --accent:#00a65a;
-  --muted:#6b7280;
-  --bg:#f8fafc;
-  --card:#ffffff;
+/* RESET DASAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-*{box-sizing:border-box}
-html,body{height:100%;margin:0;background:var(--bg);color:#0f1724;font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
-.container{max-width:1100px;margin:0 auto;padding:20px}
-/* Header */
-.site-header{background:var(--card);position:sticky;top:0;z-index:60;padding:10px 0;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
-.brand{display:flex;align-items:center;gap:12px}
-.brand img{width:64px;height:64px;object-fit:contain;border-radius:8px}
-.brand .title{display:flex;flex-direction:column}
-.brand .title .top{font-weight:700;color:var(--green);font-size:18px}
-.brand .title .sub{font-weight:600;color:#0f1724;font-size:14px}
-nav.site-nav ul{display:flex;gap:18px;align-items:center;margin:0;padding:0;list-style:none}
-nav.site-nav a{color:var(--green);text-decoration:none;font-weight:600}
-.cta-donate{background:var(--accent);color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:700}
-.menu-btn{display:none;border:0;background:transparent;font-size:20px}
-@media(max-width:860px){nav.site-nav{display:none}.menu-btn{display:block}}
-/* Hero */
-.hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:48px 0}
-.hero h1{font-size:34px;margin:0 0 12px;color:#052225}
-.hero p{margin:0 0 18px;color:var(--muted)}
-.actions{display:flex;gap:12px}
-.card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 8px 30px rgba(2,6,23,0.06)}
-.donate-cta{display:flex;flex-direction:column;gap:10px}
-.programs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
-.programs .program{padding:14px;border-radius:10px;background:linear-gradient(180deg,#f8fff9,#f1fdf4);border:1px solid rgba(0,106,58,0.06)}
-@media(max-width:860px){.hero{grid-template-columns:1fr}.programs{grid-template-columns:1fr}}
-/* News */
-.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
-.news-item{background:var(--card);padding:14px;border-radius:10px;min-height:120px}
-@media(max-width:860px){.news-grid{grid-template-columns:1fr}}
-/* Footer */
-footer{margin-top:48px;padding:28px 0;color:var(--muted);font-size:14px}
-/* Utilities */
-.muted{color:var(--muted)}
-.small{font-size:13px}
-.pill{background:#eefaf0;padding:6px 10px;border-radius:999px;color:var(--green);font-weight:600}
-/* Forms */
-.form-row{display:flex;gap:10px;margin-bottom:10px}
-input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef0;background:white}
-button.btn{background:var(--green);color:white;padding:10px 12px;border-radius:8px;border:0;font-weight:700}
-.inline-helper{font-size:13px;color:var(--muted)}
-.copy-btn{background:#eef5ee;border:1px solid rgba(0,106,58,0.08);padding:6px 8px;border-radius:8px;cursor:pointer}
-/* skeleton */
-.skeleton{background:linear-gradient(90deg,#f0f3f5 25%, #e6eef0 37%, #f0f3f5 63%);background-size:400% 100%;animation:shimmer 1.4s ease infinite;border-radius:8px}
-@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+/* WARNA UTAMA */
+:root {
+  --hijau-tua: #005a34;
+  --hijau-terang: #009e60;
+  --putih: #ffffff;
+  --abu: #f4f4f4;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: var(--putih);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.yayasan {
+  font-size: 1rem;
+  color: #000;
+}
+
+.arridha {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--hijau-tua);
+}
+
+/* NAVBAR */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--hijau-tua);
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--hijau-terang);
+}
+
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: var(--hijau-tua);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    width: 100%;
+  }
+
+  .nav.active {
+    display: block;
+    background: var(--putih);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeDown 0.3s ease;
+  }
+
+  .
