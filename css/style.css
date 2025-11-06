@@ -99,4 +99,133 @@
     animation: fadeDown 0.3s ease;
   }
 
-  .
+  .nav-links {
+    flex-direction: column;
+    text-align: right;
+    padding: 10px 20px;
+  }
+
+  .nav-links li {
+    padding: 8px 0;
+  }
+
+  @keyframes fadeDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(rgba(0, 90, 52, 0.7), rgba(0, 90, 52, 0.7)),
+    url("https://images.unsplash.com/photo-1603570417036-8d7b20e72df0?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+  color: var(--putih);
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.hero-content h1 span {
+  color: #fff;
+  font-weight: 800;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: var(--putih);
+  color: var(--hijau-tua);
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--hijau-terang);
+  color: var(--putih);
+}
+
+/* PROGRAM */
+.program {
+  background: var(--abu);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.program h2 {
+  font-size: 2rem;
+  color: var(--hijau-tua);
+  margin-bottom: 40px;
+}
+
+.program-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: var(--putih);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: var(--hijau-tua);
+  margin: 15px 0 10px;
+}
+
+.card p {
+  padding: 0 15px 20px;
+  color: #333;
+}
+
+/* BERITA */
+.berita {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* KONTAK */
+.kontak {
+  background: var(--hijau-tua);
+  color: var(--putih);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* FOOTER */
+footer {
+  background: #00361e;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
