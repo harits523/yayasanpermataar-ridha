@@ -1,83 +1,89 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yayasan Permata Ar-Ridha</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<header class="header">
-  <div class="logo-container">
-    <img src="assets/20251105_050436_0000.png" alt="Logo Yayasan" class="logo">
-    <div class="logo-text">
-      <span class="yayasan">Yayasan Permata</span>
-      <span class="arridha">Ar-Ridha</span>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="https://drive.google.com/uc?export=view&id=1wV1wLrhhhDyjMY58qWI7UXrXrLSEmL9u" alt="Logo Yayasan" class="logo" />
+      <div class="logo-text">
+        <span class="yayasan">Yayasan Permata</span>
+        <span class="arridha">Ar-Ridha</span>
+      </div>
     </div>
-  </div>
 
-  <!-- Tombol kebab -->
-  <div class="menu-toggle" id="menu-toggle">
-    &#8942; <!-- simbol titik tiga vertikal -->
-  </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
 
-  <!-- Navigasi -->
-  <nav class="nav" id="nav-menu">
-    <ul class="nav-links">
-      <li><a href="#beranda">Beranda</a></li>
-      <li><a href="#program">Program</a></li>
-      <li><a href="#kontak">Kontak</a></li>
-    </ul>
-  </nav>
-</header>
-
-<!-- Tambahkan script sebelum </body> -->
-<script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const navMenu = document.getElementById('nav-menu');
-
-  menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
-</script>
-
-</header>
+    <nav class="nav" id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#berita">Berita</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content fade-up">
-      <h2>Program Unggulan Yayasan</h2>
-      <p>Membangun generasi Qurani dengan cinta dan kepedulian.</p>
+  <section class="hero" id="beranda">
+    <div class="hero-content">
+      <h1>Selamat Datang di <br><span>Yayasan Permata Ar-Ridha</span></h1>
+      <p>Bersinergi membangun generasi unggul dengan iman, ilmu, dan amal.</p>
       <a href="#program" class="btn">Lihat Program</a>
     </div>
   </section>
 
   <!-- Program Section -->
-  <section id="program" class="program-section">
-    <h2 class="fade-up">Program Yayasan Permata Ar-Ridha</h2>
-    <div class="program-container">
-      <div class="program-card fade-up">
-        <h3>Pendidikan</h3>
-        <p>Memberikan pendidikan Islami dan modern bagi anak-anak.</p>
+  <section class="program" id="program">
+    <h2>Program Yayasan</h2>
+    <div class="program-list">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581092795360-fd1ca4a6d9b7?auto=format&fit=crop&w=800&q=80" alt="Program 1">
+        <h3>Pendidikan Anak</h3>
+        <p>Membangun karakter dan kecerdasan anak-anak melalui pendidikan Islami dan kreatif.</p>
       </div>
-      <div class="program-card fade-up">
-        <h3>Sosial</h3>
-        <p>Menyalurkan bantuan untuk masyarakat yang membutuhkan.</p>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1603570417036-8d7b20e72df0?auto=format&fit=crop&w=800&q=80" alt="Program 2">
+        <h3>Sosial & Kemanusiaan</h3>
+        <p>Menebar kebaikan kepada sesama melalui kegiatan sosial dan bantuan kemanusiaan.</p>
       </div>
-      <div class="program-card fade-up">
-        <h3>Dakwah</h3>
-        <p>Menyebarkan nilai-nilai Islam melalui kajian dan kegiatan keagamaan.</p>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1580894894514-cd3c9c43d3c8?auto=format&fit=crop&w=800&q=80" alt="Program 3">
+        <h3>Dakwah & Pembinaan</h3>
+        <p>Menyebarkan dakwah Islam dengan pendekatan modern dan penuh kasih sayang.</p>
       </div>
     </div>
   </section>
 
+  <!-- Berita Section -->
+  <section class="berita" id="berita">
+    <h2>Berita Terbaru</h2>
+    <p>Segera hadir: sistem berita otomatis dari dashboard admin.</p>
+  </section>
+
+  <!-- Kontak Section -->
+  <section class="kontak" id="kontak">
+    <h2>Kontak Kami</h2>
+    <p>Hubungi kami untuk informasi lebih lanjut tentang program Yayasan Permata Ar-Ridha.</p>
+    <p><strong>Email:</strong> yayasanpermataarridha@gmail.com</p>
+  </section>
+
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Yayasan Permata Ar-Ridha. Semua hak dilindungi.</p>
+    <p>&copy; 2025 Yayasan Permata Ar-Ridha. All rights reserved.</p>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
 </body>
 </html>
