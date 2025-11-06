@@ -5,84 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yayasan Permata Ar-Ridha</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="logo-container">
-      <img src="https://drive.google.com/uc?export=view&id=1wV1wLrhhhDyjMY58qWI7UXrXrLSEmL9u" alt="Logo Yayasan" class="logo" />
-      <div class="logo-text">
-        <span class="yayasan">Yayasan Permata</span>
-        <span class="arridha">Ar-Ridha</span>
+
+  <!-- HEADER -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo-section">
+        <img src="https://drive.google.com/uc?export=view&id=1wV1wLrhhhDyjMY58qWI7UXrXrLSEmL9u" alt="Logo" class="logo" />
+        <div class="logo-text">
+          <span class="yayasan">Yayasan Permata</span>
+          <span class="arridha">Ar-Ridha</span>
+        </div>
       </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#program">Program</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#artikel">Artikel</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
     </div>
-
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-
-    <nav class="nav" id="nav-menu">
-      <ul class="nav-links">
-        <li><a href="#beranda">Beranda</a></li>
-        <li><a href="#program">Program</a></li>
-        <li><a href="#berita">Berita</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- HERO -->
   <section class="hero" id="beranda">
     <div class="hero-content">
-      <h1>Selamat Datang di <br><span>Yayasan Permata Ar-Ridha</span></h1>
-      <p>Bersinergi membangun generasi unggul dengan iman, ilmu, dan amal.</p>
-      <a href="#program" class="btn">Lihat Program</a>
+      <h1>Membangun Generasi Qurani dengan Cinta dan Kepedulian</h1>
+      <a href="#program" class="btn-primary">Lihat Program</a>
     </div>
   </section>
 
-  <!-- Program Section -->
-  <section class="program" id="program">
-    <h2>Program Yayasan</h2>
-    <div class="program-list">
+  <!-- PROGRAM -->
+  <section class="program-section" id="program">
+    <h2>Program Unggulan</h2>
+    <p class="subtitle">Program utama Yayasan dalam bidang pendidikan, sosial, dan dakwah.</p>
+    <div class="card-grid">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1581092795360-fd1ca4a6d9b7?auto=format&fit=crop&w=800&q=80" alt="Program 1">
+        <img src="https://images.unsplash.com/photo-1581092795360-fd1ca4a6d9b7?auto=format&fit=crop&w=800&q=80" alt="Pendidikan">
         <h3>Pendidikan Anak</h3>
-        <p>Membangun karakter dan kecerdasan anak-anak melalui pendidikan Islami dan kreatif.</p>
+        <p>Pendidikan Al-Qur’an, pembentukan karakter, dan kreativitas generasi muda.</p>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1603570417036-8d7b20e72df0?auto=format&fit=crop&w=800&q=80" alt="Program 2">
-        <h3>Sosial & Kemanusiaan</h3>
-        <p>Menebar kebaikan kepada sesama melalui kegiatan sosial dan bantuan kemanusiaan.</p>
+        <img src="https://images.unsplash.com/photo-1603570417036-8d7b20e72df0?auto=format&fit=crop&w=800&q=80" alt="Sosial">
+        <h3>Kegiatan Sosial</h3>
+        <p>Bakti sosial, santunan anak yatim, dan bantuan masyarakat dhuafa.</p>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1580894894514-cd3c9c43d3c8?auto=format&fit=crop&w=800&q=80" alt="Program 3">
-        <h3>Dakwah & Pembinaan</h3>
-        <p>Menyebarkan dakwah Islam dengan pendekatan modern dan penuh kasih sayang.</p>
+        <img src="https://images.unsplash.com/photo-1580894894514-cd3c9c43d3c8?auto=format&fit=crop&w=800&q=80" alt="Dakwah">
+        <h3>Dakwah & Kajian</h3>
+        <p>Kajian Islam, pembinaan rohani, dan penyebaran nilai-nilai kebaikan.</p>
       </div>
     </div>
   </section>
 
-  <!-- Berita Section -->
-  <section class="berita" id="berita">
-    <h2>Berita Terbaru</h2>
-    <p>Segera hadir: sistem berita otomatis dari dashboard admin.</p>
+  <!-- GALERI -->
+  <section class="galeri" id="galeri">
+    <div class="section-header">
+      <h2>Galeri Kegiatan</h2>
+      <a href="#" class="link-more">Lihat Selengkapnya →</a>
+    </div>
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1603570417036-8d7b20e72df0?auto=format&fit=crop&w=800&q=80" alt="">
+      <img src="https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=800&q=80" alt="">
+      <img src="https://images.unsplash.com/photo-1616469829935-5b3f3d8eacc8?auto=format&fit=crop&w=800&q=80" alt="">
+      <img src="https://images.unsplash.com/photo-1581091012184-7c54a7b24aa0?auto=format&fit=crop&w=800&q=80" alt="">
+      <img src="https://images.unsplash.com/photo-1576765608535-5c3a33ad39d1?auto=format&fit=crop&w=800&q=80" alt="">
+    </div>
   </section>
 
-  <!-- Kontak Section -->
+  <!-- ARTIKEL -->
+  <section class="artikel" id="artikel">
+    <div class="section-header">
+      <h2>Artikel Terbaru</h2>
+      <a href="#" class="link-more">Lihat Semua →</a>
+    </div>
+    <div class="artikel-grid">
+      <div class="artikel-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="">
+        <div class="text">
+          <h4>Makna Ar-Ridha dalam Kehidupan</h4>
+          <p>Meneladani makna ridha dalam kehidupan sehari-hari agar mendapat ketenangan batin.</p>
+        </div>
+      </div>
+      <div class="artikel-card">
+        <img src="https://images.unsplash.com/photo-1576765608535-5c3a33ad39d1?auto=format&fit=crop&w=800&q=80" alt="">
+        <div class="text">
+          <h4>Kegiatan Sosial Ramadhan 2025</h4>
+          <p>Berbagi paket sembako dan santunan untuk masyarakat sekitar.</p>
+        </div>
+      </div>
+      <div class="artikel-card">
+        <img src="https://images.unsplash.com/photo-1581091012184-7c54a7b24aa0?auto=format&fit=crop&w=800&q=80" alt="">
+        <div class="text">
+          <h4>Pendidikan Islami untuk Generasi Emas</h4>
+          <p>Mengembangkan sistem pendidikan yang seimbang antara iman dan ilmu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
   <section class="kontak" id="kontak">
-    <h2>Kontak Kami</h2>
-    <p>Hubungi kami untuk informasi lebih lanjut tentang program Yayasan Permata Ar-Ridha.</p>
-    <p><strong>Email:</strong> yayasanpermataarridha@gmail.com</p>
+    <h2>Hubungi Kami</h2>
+    <p>yayasanpermataarridha@gmail.com</p>
+    <p>Jl. Permata Ar-Ridha No. 5, Selayar</p>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Yayasan Permata Ar-Ridha. All rights reserved.</p>
+    <p>© 2025 Yayasan Permata Ar-Ridha | Developed with ❤️ by Ar-Ridha Team</p>
   </footer>
 
   <script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const navMenu = document.getElementById("nav-menu");
-    menuToggle.addEventListener("click", () => {
-      navMenu.classList.toggle("active");
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
     });
   </script>
 </body>
